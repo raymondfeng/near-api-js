@@ -28,7 +28,6 @@ export declare class AccountMultisig extends Account {
     signAndSendTransactionWithAccount(receiverId: string, actions: Action[]): Promise<FinalExecutionOutcome>;
     signAndSendTransaction(receiverId: string, actions: Action[]): Promise<FinalExecutionOutcome>;
     deleteUnconfirmedRequests(): Promise<void>;
-    getRequestNonce(): Promise<number>;
     getRequestIds(): Promise<string>;
     isDeleteAction(actions: any): boolean;
     getRequest(): any;
