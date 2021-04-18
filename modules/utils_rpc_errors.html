@@ -1,0 +1,1504 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>utils/rpc_errors | near-api-js</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<ul class="results-priority" style="display:none">
+					</ul>
+					<a href="../index.html" class="title">near-api-js</a>
+					&emsp;<a href="https://docs.near.org" class="title">NEAR Docs</a>
+					&emsp;<a href="https://docs.near.org/docs/develop/front-end/naj-quick-reference" class="title">API JS Quick Reference</a>
+					&emsp;<a href="https://docs.near.org/docs/develop/front-end/rpc" class="title">RPC Endpoints</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="utils_rpc_errors.html">utils/rpc_errors</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-3 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation outline primary">
+				<a style="margin-left:0em" href="../globals.html">Globals</a>
+				<ul style="display:none">
+					{&quot;Connect to NEAR&quot;:{&quot;browser&quot;:&quot;browserconnect&quot;,&quot;node.js&quot;:&quot;connect&quot;},&quot;Managing Accounts&quot;:{&quot;Account&quot;:&quot;classes/account.account-1&quot;,&quot;Wallet Account&quot;:&quot;classes/walletaccount.walletconnection&quot;,&quot;Smart Contracts&quot;:&quot;classes/contract.contract-1&quot;},&quot;Managing Keys&quot;:{&quot;KeyPair&quot;:&quot;utils_key_pair&quot;,&quot;BrowserLocalStorageKeyStore&quot;:&quot;classes/key_stores_browser_local_storage_key_store.browserlocalstoragekeystore&quot;,&quot;InMemoryKeyStore&quot;:&quot;classes/key_stores_in_memory_key_store.inmemorykeystore&quot;,&quot;UnencryptedFileSystemKeyStore&quot;:&quot;classes/key_stores_unencrypted_file_system_keystore.unencryptedfilesystemkeystore&quot;,&quot;MergeKeyStore&quot;:&quot;classes/key_stores_merge_key_store.mergekeystore&quot;},&quot;RPC&quot;:{&quot;Request and Response Types&quot;:&quot;providers_provider&quot;,&quot;Client&quot;:&quot;classes/providers_json_rpc_provider.jsonrpcprovider&quot;},&quot;utils&quot;:{&quot;Formatting&quot;:&quot;utils_format&quot;}}
+				</ul>
+			</nav>
+		</div>
+		<div class="col-7 offset-3 col-content">
+			<h1>Module utils/rpc_errors</h1>
+			<section class="tsd-panel-group tsd-index-group">
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>References</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#accesskeynotfound" class="tsd-kind-icon">Access<wbr>Key<wbr>Not<wbr>Found</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#accountalreadyexists" class="tsd-kind-icon">Account<wbr>Already<wbr>Exists</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#accountdoesnotexist" class="tsd-kind-icon">Account<wbr>Does<wbr>Not<wbr>Exist</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#actionerror" class="tsd-kind-icon">Action<wbr>Error</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#actionsvalidationerror" class="tsd-kind-icon">Actions<wbr>Validation<wbr>Error</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#actornopermission" class="tsd-kind-icon">Actor<wbr>NoPermission</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#addkeyalreadyexists" class="tsd-kind-icon">Add<wbr>Key<wbr>Already<wbr>Exists</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#addkeymethodnamelengthexceeded" class="tsd-kind-icon">Add<wbr>Key<wbr>Method<wbr>Name<wbr>Length<wbr>Exceeded</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#addkeymethodnamesnumberofbytesexceeded" class="tsd-kind-icon">Add<wbr>Key<wbr>Method<wbr>Names<wbr>Number<wbr>OfBytes<wbr>Exceeded</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#badutf16" class="tsd-kind-icon">BadUTF16</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#badutf8" class="tsd-kind-icon">BadUTF8</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#balanceexceeded" class="tsd-kind-icon">Balance<wbr>Exceeded</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#balancemismatcherror" class="tsd-kind-icon">Balance<wbr>Mismatch<wbr>Error</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#breakpointtrap" class="tsd-kind-icon">Breakpoint<wbr>Trap</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#cacheerror" class="tsd-kind-icon">Cache<wbr>Error</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#callindirectoob" class="tsd-kind-icon">Call<wbr>IndirectOOB</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#cannotappendactiontojointpromise" class="tsd-kind-icon">Cannot<wbr>Append<wbr>Action<wbr>ToJoint<wbr>Promise</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#cannotreturnjointpromise" class="tsd-kind-icon">Cannot<wbr>Return<wbr>Joint<wbr>Promise</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#closed" class="tsd-kind-icon">Closed</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#codedoesnotexist" class="tsd-kind-icon">Code<wbr>Does<wbr>Not<wbr>Exist</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#compilationerror" class="tsd-kind-icon">Compilation<wbr>Error</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#contractsizeexceeded" class="tsd-kind-icon">Contract<wbr>Size<wbr>Exceeded</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#costoverflow" class="tsd-kind-icon">Cost<wbr>Overflow</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#createaccountnotallowed" class="tsd-kind-icon">Create<wbr>Account<wbr>Not<wbr>Allowed</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#createaccountonlybyregistrar" class="tsd-kind-icon">Create<wbr>Account<wbr>Only<wbr>ByRegistrar</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#deleteaccountstaking" class="tsd-kind-icon">Delete<wbr>Account<wbr>Staking</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#deleteactionmustbefinal" class="tsd-kind-icon">Delete<wbr>Action<wbr>Must<wbr>BeFinal</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#deletekeydoesnotexist" class="tsd-kind-icon">Delete<wbr>Key<wbr>Does<wbr>Not<wbr>Exist</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#depositwithfunctioncall" class="tsd-kind-icon">Deposit<wbr>With<wbr>Function<wbr>Call</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#deprecated" class="tsd-kind-icon">Deprecated</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#deserialization" class="tsd-kind-icon">Deserialization</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#deserializationerror" class="tsd-kind-icon">Deserialization<wbr>Error</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#emptymethodname" class="tsd-kind-icon">Empty<wbr>Method<wbr>Name</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#expired" class="tsd-kind-icon">Expired</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#functioncallargumentslengthexceeded" class="tsd-kind-icon">Function<wbr>Call<wbr>Arguments<wbr>Length<wbr>Exceeded</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#functioncallerror" class="tsd-kind-icon">Function<wbr>Call<wbr>Error</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#functioncallmethodnamelengthexceeded" class="tsd-kind-icon">Function<wbr>Call<wbr>Method<wbr>Name<wbr>Length<wbr>Exceeded</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#functioncallzeroattachedgas" class="tsd-kind-icon">Function<wbr>Call<wbr>Zero<wbr>Attached<wbr>Gas</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#gasexceeded" class="tsd-kind-icon">Gas<wbr>Exceeded</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#gasinstrumentation" class="tsd-kind-icon">Gas<wbr>Instrumentation</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#gaslimitexceeded" class="tsd-kind-icon">Gas<wbr>Limit<wbr>Exceeded</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#generictrap" class="tsd-kind-icon">Generic<wbr>Trap</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#guestpanic" class="tsd-kind-icon">Guest<wbr>Panic</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#hosterror" class="tsd-kind-icon">Host<wbr>Error</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#illegalarithmetic" class="tsd-kind-icon">Illegal<wbr>Arithmetic</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#incorrectcallindirectsignature" class="tsd-kind-icon">Incorrect<wbr>Call<wbr>Indirect<wbr>Signature</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#instantiate" class="tsd-kind-icon">Instantiate</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#insufficientstake" class="tsd-kind-icon">Insufficient<wbr>Stake</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#integeroverflow" class="tsd-kind-icon">Integer<wbr>Overflow</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#internalerror" class="tsd-kind-icon">Internal<wbr>Error</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#internalmemorydeclared" class="tsd-kind-icon">Internal<wbr>Memory<wbr>Declared</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#invalidaccesskeyerror" class="tsd-kind-icon">Invalid<wbr>Access<wbr>Key<wbr>Error</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#invalidaccountid" class="tsd-kind-icon">Invalid<wbr>Account<wbr>Id</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#invalidchain" class="tsd-kind-icon">Invalid<wbr>Chain</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#invaliddatareceiverid" class="tsd-kind-icon">Invalid<wbr>Data<wbr>Receiver<wbr>Id</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#invaliditeratorindex" class="tsd-kind-icon">Invalid<wbr>Iterator<wbr>Index</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#invalidmethodname" class="tsd-kind-icon">Invalid<wbr>Method<wbr>Name</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#invalidnonce" class="tsd-kind-icon">Invalid<wbr>Nonce</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#invalidpredecessorid" class="tsd-kind-icon">Invalid<wbr>Predecessor<wbr>Id</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#invalidpromiseindex" class="tsd-kind-icon">Invalid<wbr>Promise<wbr>Index</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#invalidpromiseresultindex" class="tsd-kind-icon">Invalid<wbr>Promise<wbr>Result<wbr>Index</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#invalidpublickey" class="tsd-kind-icon">Invalid<wbr>Public<wbr>Key</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#invalidreceiptindex" class="tsd-kind-icon">Invalid<wbr>Receipt<wbr>Index</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#invalidreceiverid" class="tsd-kind-icon">Invalid<wbr>Receiver<wbr>Id</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#invalidregisterid" class="tsd-kind-icon">Invalid<wbr>Register<wbr>Id</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#invalidsignature" class="tsd-kind-icon">Invalid<wbr>Signature</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#invalidsignerid" class="tsd-kind-icon">Invalid<wbr>Signer<wbr>Id</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#invalidtxerror" class="tsd-kind-icon">Invalid<wbr>TxError</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#iteratorwasinvalidated" class="tsd-kind-icon">Iterator<wbr>Was<wbr>Invalidated</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#keylengthexceeded" class="tsd-kind-icon">Key<wbr>Length<wbr>Exceeded</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#lackbalanceforstate" class="tsd-kind-icon">Lack<wbr>Balance<wbr>For<wbr>State</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#linkerror" class="tsd-kind-icon">Link<wbr>Error</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#memory" class="tsd-kind-icon">Memory</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#memoryaccessviolation" class="tsd-kind-icon">Memory<wbr>Access<wbr>Violation</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#memoryoutofbounds" class="tsd-kind-icon">Memory<wbr>Out<wbr>OfBounds</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#methodemptyname" class="tsd-kind-icon">Method<wbr>Empty<wbr>Name</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#methodinvalidsignature" class="tsd-kind-icon">Method<wbr>Invalid<wbr>Signature</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#methodnamemismatch" class="tsd-kind-icon">Method<wbr>Name<wbr>Mismatch</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#methodnotfound" class="tsd-kind-icon">Method<wbr>Not<wbr>Found</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#methodresolveerror" class="tsd-kind-icon">Method<wbr>Resolve<wbr>Error</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#methodutf8error" class="tsd-kind-icon">MethodUTF8<wbr>Error</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#misalignedatomicaccess" class="tsd-kind-icon">Misaligned<wbr>Atomic<wbr>Access</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#notenoughallowance" class="tsd-kind-icon">Not<wbr>Enough<wbr>Allowance</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#notenoughbalance" class="tsd-kind-icon">Not<wbr>Enough<wbr>Balance</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#numberinputdatadependenciesexceeded" class="tsd-kind-icon">Number<wbr>Input<wbr>Data<wbr>Dependencies<wbr>Exceeded</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#numberoflogsexceeded" class="tsd-kind-icon">Number<wbr>OfLogs<wbr>Exceeded</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#numberpromisesexceeded" class="tsd-kind-icon">Number<wbr>Promises<wbr>Exceeded</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#onlyimplicitaccountcreationallowed" class="tsd-kind-icon">Only<wbr>Implicit<wbr>Account<wbr>Creation<wbr>Allowed</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#prepareerror" class="tsd-kind-icon">Prepare<wbr>Error</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#prohibitedinview" class="tsd-kind-icon">Prohibited<wbr>InView</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#readerror" class="tsd-kind-icon">Read<wbr>Error</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#receiptvalidationerror" class="tsd-kind-icon">Receipt<wbr>Validation<wbr>Error</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#receivermismatch" class="tsd-kind-icon">Receiver<wbr>Mismatch</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#requiresfullaccess" class="tsd-kind-icon">Requires<wbr>Full<wbr>Access</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#returnedvaluelengthexceeded" class="tsd-kind-icon">Returned<wbr>Value<wbr>Length<wbr>Exceeded</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#serialization" class="tsd-kind-icon">Serialization</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#serializationerror" class="tsd-kind-icon">Serialization<wbr>Error</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#servererror" class="tsd-kind-icon">Server<wbr>Error</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#signerdoesnotexist" class="tsd-kind-icon">Signer<wbr>Does<wbr>Not<wbr>Exist</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#stackheightinstrumentation" class="tsd-kind-icon">Stack<wbr>Height<wbr>Instrumentation</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#stackoverflow" class="tsd-kind-icon">Stack<wbr>Overflow</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#timeout" class="tsd-kind-icon">Timeout</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#totalloglengthexceeded" class="tsd-kind-icon">Total<wbr>Log<wbr>Length<wbr>Exceeded</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#totalnumberofactionsexceeded" class="tsd-kind-icon">Total<wbr>Number<wbr>OfActions<wbr>Exceeded</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#totalprepaidgasexceeded" class="tsd-kind-icon">Total<wbr>Prepaid<wbr>Gas<wbr>Exceeded</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#triestostake" class="tsd-kind-icon">Tries<wbr>ToStake</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#triestounstake" class="tsd-kind-icon">Tries<wbr>ToUnstake</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#txexecutionerror" class="tsd-kind-icon">Tx<wbr>Execution<wbr>Error</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#unreachable" class="tsd-kind-icon">Unreachable</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#unsuitablestakingkey" class="tsd-kind-icon">Unsuitable<wbr>Staking<wbr>Key</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#valuelengthexceeded" class="tsd-kind-icon">Value<wbr>Length<wbr>Exceeded</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#wasmtrap" class="tsd-kind-icon">Wasm<wbr>Trap</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#wasmunknownerror" class="tsd-kind-icon">Wasm<wbr>Unknown<wbr>Error</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#wasmercompileerror" class="tsd-kind-icon">Wasmer<wbr>Compile<wbr>Error</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="utils_rpc_errors.html#writeerror" class="tsd-kind-icon">Write<wbr>Error</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="utils_rpc_errors.html#formaterror" class="tsd-kind-icon">format<wbr>Error</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="utils_rpc_errors.html#geterrortypefromerrormessage" class="tsd-kind-icon">get<wbr>Error<wbr>Type<wbr>From<wbr>Error<wbr>Message</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="utils_rpc_errors.html#parseresulterror" class="tsd-kind-icon">parse<wbr>Result<wbr>Error</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="utils_rpc_errors.html#parserpcerror" class="tsd-kind-icon">parse<wbr>Rpc<wbr>Error</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>References</h2>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="accesskeynotfound" class="tsd-anchor"></a>
+					<h3>Access<wbr>Key<wbr>Not<wbr>Found</h3>
+					<div class="tsd-signature tsd-kind-icon">Access<wbr>Key<wbr>Not<wbr>Found<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="accountalreadyexists" class="tsd-anchor"></a>
+					<h3>Account<wbr>Already<wbr>Exists</h3>
+					<div class="tsd-signature tsd-kind-icon">Account<wbr>Already<wbr>Exists<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="accountdoesnotexist" class="tsd-anchor"></a>
+					<h3>Account<wbr>Does<wbr>Not<wbr>Exist</h3>
+					<div class="tsd-signature tsd-kind-icon">Account<wbr>Does<wbr>Not<wbr>Exist<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="actionerror" class="tsd-anchor"></a>
+					<h3>Action<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">Action<wbr>Error<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="actionsvalidationerror" class="tsd-anchor"></a>
+					<h3>Actions<wbr>Validation<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">Actions<wbr>Validation<wbr>Error<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="actornopermission" class="tsd-anchor"></a>
+					<h3>Actor<wbr>NoPermission</h3>
+					<div class="tsd-signature tsd-kind-icon">Actor<wbr>NoPermission<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="addkeyalreadyexists" class="tsd-anchor"></a>
+					<h3>Add<wbr>Key<wbr>Already<wbr>Exists</h3>
+					<div class="tsd-signature tsd-kind-icon">Add<wbr>Key<wbr>Already<wbr>Exists<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="addkeymethodnamelengthexceeded" class="tsd-anchor"></a>
+					<h3>Add<wbr>Key<wbr>Method<wbr>Name<wbr>Length<wbr>Exceeded</h3>
+					<div class="tsd-signature tsd-kind-icon">Add<wbr>Key<wbr>Method<wbr>Name<wbr>Length<wbr>Exceeded<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="addkeymethodnamesnumberofbytesexceeded" class="tsd-anchor"></a>
+					<h3>Add<wbr>Key<wbr>Method<wbr>Names<wbr>Number<wbr>OfBytes<wbr>Exceeded</h3>
+					<div class="tsd-signature tsd-kind-icon">Add<wbr>Key<wbr>Method<wbr>Names<wbr>Number<wbr>OfBytes<wbr>Exceeded<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="badutf16" class="tsd-anchor"></a>
+					<h3>BadUTF16</h3>
+					<div class="tsd-signature tsd-kind-icon">BadUTF16<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="badutf8" class="tsd-anchor"></a>
+					<h3>BadUTF8</h3>
+					<div class="tsd-signature tsd-kind-icon">BadUTF8<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="balanceexceeded" class="tsd-anchor"></a>
+					<h3>Balance<wbr>Exceeded</h3>
+					<div class="tsd-signature tsd-kind-icon">Balance<wbr>Exceeded<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="balancemismatcherror" class="tsd-anchor"></a>
+					<h3>Balance<wbr>Mismatch<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">Balance<wbr>Mismatch<wbr>Error<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="breakpointtrap" class="tsd-anchor"></a>
+					<h3>Breakpoint<wbr>Trap</h3>
+					<div class="tsd-signature tsd-kind-icon">Breakpoint<wbr>Trap<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="cacheerror" class="tsd-anchor"></a>
+					<h3>Cache<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">Cache<wbr>Error<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="callindirectoob" class="tsd-anchor"></a>
+					<h3>Call<wbr>IndirectOOB</h3>
+					<div class="tsd-signature tsd-kind-icon">Call<wbr>IndirectOOB<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="cannotappendactiontojointpromise" class="tsd-anchor"></a>
+					<h3>Cannot<wbr>Append<wbr>Action<wbr>ToJoint<wbr>Promise</h3>
+					<div class="tsd-signature tsd-kind-icon">Cannot<wbr>Append<wbr>Action<wbr>ToJoint<wbr>Promise<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="cannotreturnjointpromise" class="tsd-anchor"></a>
+					<h3>Cannot<wbr>Return<wbr>Joint<wbr>Promise</h3>
+					<div class="tsd-signature tsd-kind-icon">Cannot<wbr>Return<wbr>Joint<wbr>Promise<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="closed" class="tsd-anchor"></a>
+					<h3>Closed</h3>
+					<div class="tsd-signature tsd-kind-icon">Closed<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="codedoesnotexist" class="tsd-anchor"></a>
+					<h3>Code<wbr>Does<wbr>Not<wbr>Exist</h3>
+					<div class="tsd-signature tsd-kind-icon">Code<wbr>Does<wbr>Not<wbr>Exist<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="compilationerror" class="tsd-anchor"></a>
+					<h3>Compilation<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">Compilation<wbr>Error<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="contractsizeexceeded" class="tsd-anchor"></a>
+					<h3>Contract<wbr>Size<wbr>Exceeded</h3>
+					<div class="tsd-signature tsd-kind-icon">Contract<wbr>Size<wbr>Exceeded<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="costoverflow" class="tsd-anchor"></a>
+					<h3>Cost<wbr>Overflow</h3>
+					<div class="tsd-signature tsd-kind-icon">Cost<wbr>Overflow<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="createaccountnotallowed" class="tsd-anchor"></a>
+					<h3>Create<wbr>Account<wbr>Not<wbr>Allowed</h3>
+					<div class="tsd-signature tsd-kind-icon">Create<wbr>Account<wbr>Not<wbr>Allowed<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="createaccountonlybyregistrar" class="tsd-anchor"></a>
+					<h3>Create<wbr>Account<wbr>Only<wbr>ByRegistrar</h3>
+					<div class="tsd-signature tsd-kind-icon">Create<wbr>Account<wbr>Only<wbr>ByRegistrar<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="deleteaccountstaking" class="tsd-anchor"></a>
+					<h3>Delete<wbr>Account<wbr>Staking</h3>
+					<div class="tsd-signature tsd-kind-icon">Delete<wbr>Account<wbr>Staking<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="deleteactionmustbefinal" class="tsd-anchor"></a>
+					<h3>Delete<wbr>Action<wbr>Must<wbr>BeFinal</h3>
+					<div class="tsd-signature tsd-kind-icon">Delete<wbr>Action<wbr>Must<wbr>BeFinal<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="deletekeydoesnotexist" class="tsd-anchor"></a>
+					<h3>Delete<wbr>Key<wbr>Does<wbr>Not<wbr>Exist</h3>
+					<div class="tsd-signature tsd-kind-icon">Delete<wbr>Key<wbr>Does<wbr>Not<wbr>Exist<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="depositwithfunctioncall" class="tsd-anchor"></a>
+					<h3>Deposit<wbr>With<wbr>Function<wbr>Call</h3>
+					<div class="tsd-signature tsd-kind-icon">Deposit<wbr>With<wbr>Function<wbr>Call<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="deprecated" class="tsd-anchor"></a>
+					<h3>Deprecated</h3>
+					<div class="tsd-signature tsd-kind-icon">Deprecated<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="deserialization" class="tsd-anchor"></a>
+					<h3>Deserialization</h3>
+					<div class="tsd-signature tsd-kind-icon">Deserialization<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="deserializationerror" class="tsd-anchor"></a>
+					<h3>Deserialization<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">Deserialization<wbr>Error<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="emptymethodname" class="tsd-anchor"></a>
+					<h3>Empty<wbr>Method<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">Empty<wbr>Method<wbr>Name<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="expired" class="tsd-anchor"></a>
+					<h3>Expired</h3>
+					<div class="tsd-signature tsd-kind-icon">Expired<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="functioncallargumentslengthexceeded" class="tsd-anchor"></a>
+					<h3>Function<wbr>Call<wbr>Arguments<wbr>Length<wbr>Exceeded</h3>
+					<div class="tsd-signature tsd-kind-icon">Function<wbr>Call<wbr>Arguments<wbr>Length<wbr>Exceeded<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="functioncallerror" class="tsd-anchor"></a>
+					<h3>Function<wbr>Call<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">Function<wbr>Call<wbr>Error<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="functioncallmethodnamelengthexceeded" class="tsd-anchor"></a>
+					<h3>Function<wbr>Call<wbr>Method<wbr>Name<wbr>Length<wbr>Exceeded</h3>
+					<div class="tsd-signature tsd-kind-icon">Function<wbr>Call<wbr>Method<wbr>Name<wbr>Length<wbr>Exceeded<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="functioncallzeroattachedgas" class="tsd-anchor"></a>
+					<h3>Function<wbr>Call<wbr>Zero<wbr>Attached<wbr>Gas</h3>
+					<div class="tsd-signature tsd-kind-icon">Function<wbr>Call<wbr>Zero<wbr>Attached<wbr>Gas<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="gasexceeded" class="tsd-anchor"></a>
+					<h3>Gas<wbr>Exceeded</h3>
+					<div class="tsd-signature tsd-kind-icon">Gas<wbr>Exceeded<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="gasinstrumentation" class="tsd-anchor"></a>
+					<h3>Gas<wbr>Instrumentation</h3>
+					<div class="tsd-signature tsd-kind-icon">Gas<wbr>Instrumentation<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="gaslimitexceeded" class="tsd-anchor"></a>
+					<h3>Gas<wbr>Limit<wbr>Exceeded</h3>
+					<div class="tsd-signature tsd-kind-icon">Gas<wbr>Limit<wbr>Exceeded<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="generictrap" class="tsd-anchor"></a>
+					<h3>Generic<wbr>Trap</h3>
+					<div class="tsd-signature tsd-kind-icon">Generic<wbr>Trap<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="guestpanic" class="tsd-anchor"></a>
+					<h3>Guest<wbr>Panic</h3>
+					<div class="tsd-signature tsd-kind-icon">Guest<wbr>Panic<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="hosterror" class="tsd-anchor"></a>
+					<h3>Host<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">Host<wbr>Error<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="illegalarithmetic" class="tsd-anchor"></a>
+					<h3>Illegal<wbr>Arithmetic</h3>
+					<div class="tsd-signature tsd-kind-icon">Illegal<wbr>Arithmetic<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="incorrectcallindirectsignature" class="tsd-anchor"></a>
+					<h3>Incorrect<wbr>Call<wbr>Indirect<wbr>Signature</h3>
+					<div class="tsd-signature tsd-kind-icon">Incorrect<wbr>Call<wbr>Indirect<wbr>Signature<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="instantiate" class="tsd-anchor"></a>
+					<h3>Instantiate</h3>
+					<div class="tsd-signature tsd-kind-icon">Instantiate<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="insufficientstake" class="tsd-anchor"></a>
+					<h3>Insufficient<wbr>Stake</h3>
+					<div class="tsd-signature tsd-kind-icon">Insufficient<wbr>Stake<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="integeroverflow" class="tsd-anchor"></a>
+					<h3>Integer<wbr>Overflow</h3>
+					<div class="tsd-signature tsd-kind-icon">Integer<wbr>Overflow<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="internalerror" class="tsd-anchor"></a>
+					<h3>Internal<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">Internal<wbr>Error<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="internalmemorydeclared" class="tsd-anchor"></a>
+					<h3>Internal<wbr>Memory<wbr>Declared</h3>
+					<div class="tsd-signature tsd-kind-icon">Internal<wbr>Memory<wbr>Declared<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="invalidaccesskeyerror" class="tsd-anchor"></a>
+					<h3>Invalid<wbr>Access<wbr>Key<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">Invalid<wbr>Access<wbr>Key<wbr>Error<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="invalidaccountid" class="tsd-anchor"></a>
+					<h3>Invalid<wbr>Account<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">Invalid<wbr>Account<wbr>Id<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="invalidchain" class="tsd-anchor"></a>
+					<h3>Invalid<wbr>Chain</h3>
+					<div class="tsd-signature tsd-kind-icon">Invalid<wbr>Chain<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="invaliddatareceiverid" class="tsd-anchor"></a>
+					<h3>Invalid<wbr>Data<wbr>Receiver<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">Invalid<wbr>Data<wbr>Receiver<wbr>Id<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="invaliditeratorindex" class="tsd-anchor"></a>
+					<h3>Invalid<wbr>Iterator<wbr>Index</h3>
+					<div class="tsd-signature tsd-kind-icon">Invalid<wbr>Iterator<wbr>Index<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="invalidmethodname" class="tsd-anchor"></a>
+					<h3>Invalid<wbr>Method<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">Invalid<wbr>Method<wbr>Name<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="invalidnonce" class="tsd-anchor"></a>
+					<h3>Invalid<wbr>Nonce</h3>
+					<div class="tsd-signature tsd-kind-icon">Invalid<wbr>Nonce<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="invalidpredecessorid" class="tsd-anchor"></a>
+					<h3>Invalid<wbr>Predecessor<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">Invalid<wbr>Predecessor<wbr>Id<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="invalidpromiseindex" class="tsd-anchor"></a>
+					<h3>Invalid<wbr>Promise<wbr>Index</h3>
+					<div class="tsd-signature tsd-kind-icon">Invalid<wbr>Promise<wbr>Index<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="invalidpromiseresultindex" class="tsd-anchor"></a>
+					<h3>Invalid<wbr>Promise<wbr>Result<wbr>Index</h3>
+					<div class="tsd-signature tsd-kind-icon">Invalid<wbr>Promise<wbr>Result<wbr>Index<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="invalidpublickey" class="tsd-anchor"></a>
+					<h3>Invalid<wbr>Public<wbr>Key</h3>
+					<div class="tsd-signature tsd-kind-icon">Invalid<wbr>Public<wbr>Key<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="invalidreceiptindex" class="tsd-anchor"></a>
+					<h3>Invalid<wbr>Receipt<wbr>Index</h3>
+					<div class="tsd-signature tsd-kind-icon">Invalid<wbr>Receipt<wbr>Index<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="invalidreceiverid" class="tsd-anchor"></a>
+					<h3>Invalid<wbr>Receiver<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">Invalid<wbr>Receiver<wbr>Id<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="invalidregisterid" class="tsd-anchor"></a>
+					<h3>Invalid<wbr>Register<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">Invalid<wbr>Register<wbr>Id<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="invalidsignature" class="tsd-anchor"></a>
+					<h3>Invalid<wbr>Signature</h3>
+					<div class="tsd-signature tsd-kind-icon">Invalid<wbr>Signature<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="invalidsignerid" class="tsd-anchor"></a>
+					<h3>Invalid<wbr>Signer<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">Invalid<wbr>Signer<wbr>Id<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="invalidtxerror" class="tsd-anchor"></a>
+					<h3>Invalid<wbr>TxError</h3>
+					<div class="tsd-signature tsd-kind-icon">Invalid<wbr>TxError<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="iteratorwasinvalidated" class="tsd-anchor"></a>
+					<h3>Iterator<wbr>Was<wbr>Invalidated</h3>
+					<div class="tsd-signature tsd-kind-icon">Iterator<wbr>Was<wbr>Invalidated<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="keylengthexceeded" class="tsd-anchor"></a>
+					<h3>Key<wbr>Length<wbr>Exceeded</h3>
+					<div class="tsd-signature tsd-kind-icon">Key<wbr>Length<wbr>Exceeded<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="lackbalanceforstate" class="tsd-anchor"></a>
+					<h3>Lack<wbr>Balance<wbr>For<wbr>State</h3>
+					<div class="tsd-signature tsd-kind-icon">Lack<wbr>Balance<wbr>For<wbr>State<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="linkerror" class="tsd-anchor"></a>
+					<h3>Link<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">Link<wbr>Error<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="memory" class="tsd-anchor"></a>
+					<h3>Memory</h3>
+					<div class="tsd-signature tsd-kind-icon">Memory<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="memoryaccessviolation" class="tsd-anchor"></a>
+					<h3>Memory<wbr>Access<wbr>Violation</h3>
+					<div class="tsd-signature tsd-kind-icon">Memory<wbr>Access<wbr>Violation<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="memoryoutofbounds" class="tsd-anchor"></a>
+					<h3>Memory<wbr>Out<wbr>OfBounds</h3>
+					<div class="tsd-signature tsd-kind-icon">Memory<wbr>Out<wbr>OfBounds<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="methodemptyname" class="tsd-anchor"></a>
+					<h3>Method<wbr>Empty<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">Method<wbr>Empty<wbr>Name<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="methodinvalidsignature" class="tsd-anchor"></a>
+					<h3>Method<wbr>Invalid<wbr>Signature</h3>
+					<div class="tsd-signature tsd-kind-icon">Method<wbr>Invalid<wbr>Signature<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="methodnamemismatch" class="tsd-anchor"></a>
+					<h3>Method<wbr>Name<wbr>Mismatch</h3>
+					<div class="tsd-signature tsd-kind-icon">Method<wbr>Name<wbr>Mismatch<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="methodnotfound" class="tsd-anchor"></a>
+					<h3>Method<wbr>Not<wbr>Found</h3>
+					<div class="tsd-signature tsd-kind-icon">Method<wbr>Not<wbr>Found<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="methodresolveerror" class="tsd-anchor"></a>
+					<h3>Method<wbr>Resolve<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">Method<wbr>Resolve<wbr>Error<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="methodutf8error" class="tsd-anchor"></a>
+					<h3>MethodUTF8<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">MethodUTF8<wbr>Error<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="misalignedatomicaccess" class="tsd-anchor"></a>
+					<h3>Misaligned<wbr>Atomic<wbr>Access</h3>
+					<div class="tsd-signature tsd-kind-icon">Misaligned<wbr>Atomic<wbr>Access<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="notenoughallowance" class="tsd-anchor"></a>
+					<h3>Not<wbr>Enough<wbr>Allowance</h3>
+					<div class="tsd-signature tsd-kind-icon">Not<wbr>Enough<wbr>Allowance<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="notenoughbalance" class="tsd-anchor"></a>
+					<h3>Not<wbr>Enough<wbr>Balance</h3>
+					<div class="tsd-signature tsd-kind-icon">Not<wbr>Enough<wbr>Balance<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="numberinputdatadependenciesexceeded" class="tsd-anchor"></a>
+					<h3>Number<wbr>Input<wbr>Data<wbr>Dependencies<wbr>Exceeded</h3>
+					<div class="tsd-signature tsd-kind-icon">Number<wbr>Input<wbr>Data<wbr>Dependencies<wbr>Exceeded<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="numberoflogsexceeded" class="tsd-anchor"></a>
+					<h3>Number<wbr>OfLogs<wbr>Exceeded</h3>
+					<div class="tsd-signature tsd-kind-icon">Number<wbr>OfLogs<wbr>Exceeded<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="numberpromisesexceeded" class="tsd-anchor"></a>
+					<h3>Number<wbr>Promises<wbr>Exceeded</h3>
+					<div class="tsd-signature tsd-kind-icon">Number<wbr>Promises<wbr>Exceeded<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="onlyimplicitaccountcreationallowed" class="tsd-anchor"></a>
+					<h3>Only<wbr>Implicit<wbr>Account<wbr>Creation<wbr>Allowed</h3>
+					<div class="tsd-signature tsd-kind-icon">Only<wbr>Implicit<wbr>Account<wbr>Creation<wbr>Allowed<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="prepareerror" class="tsd-anchor"></a>
+					<h3>Prepare<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">Prepare<wbr>Error<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="prohibitedinview" class="tsd-anchor"></a>
+					<h3>Prohibited<wbr>InView</h3>
+					<div class="tsd-signature tsd-kind-icon">Prohibited<wbr>InView<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="readerror" class="tsd-anchor"></a>
+					<h3>Read<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">Read<wbr>Error<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="receiptvalidationerror" class="tsd-anchor"></a>
+					<h3>Receipt<wbr>Validation<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">Receipt<wbr>Validation<wbr>Error<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="receivermismatch" class="tsd-anchor"></a>
+					<h3>Receiver<wbr>Mismatch</h3>
+					<div class="tsd-signature tsd-kind-icon">Receiver<wbr>Mismatch<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="requiresfullaccess" class="tsd-anchor"></a>
+					<h3>Requires<wbr>Full<wbr>Access</h3>
+					<div class="tsd-signature tsd-kind-icon">Requires<wbr>Full<wbr>Access<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="returnedvaluelengthexceeded" class="tsd-anchor"></a>
+					<h3>Returned<wbr>Value<wbr>Length<wbr>Exceeded</h3>
+					<div class="tsd-signature tsd-kind-icon">Returned<wbr>Value<wbr>Length<wbr>Exceeded<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="serialization" class="tsd-anchor"></a>
+					<h3>Serialization</h3>
+					<div class="tsd-signature tsd-kind-icon">Serialization<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="serializationerror" class="tsd-anchor"></a>
+					<h3>Serialization<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">Serialization<wbr>Error<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="servererror" class="tsd-anchor"></a>
+					<h3>Server<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">Server<wbr>Error<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="signerdoesnotexist" class="tsd-anchor"></a>
+					<h3>Signer<wbr>Does<wbr>Not<wbr>Exist</h3>
+					<div class="tsd-signature tsd-kind-icon">Signer<wbr>Does<wbr>Not<wbr>Exist<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="stackheightinstrumentation" class="tsd-anchor"></a>
+					<h3>Stack<wbr>Height<wbr>Instrumentation</h3>
+					<div class="tsd-signature tsd-kind-icon">Stack<wbr>Height<wbr>Instrumentation<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="stackoverflow" class="tsd-anchor"></a>
+					<h3>Stack<wbr>Overflow</h3>
+					<div class="tsd-signature tsd-kind-icon">Stack<wbr>Overflow<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="timeout" class="tsd-anchor"></a>
+					<h3>Timeout</h3>
+					<div class="tsd-signature tsd-kind-icon">Timeout<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="totalloglengthexceeded" class="tsd-anchor"></a>
+					<h3>Total<wbr>Log<wbr>Length<wbr>Exceeded</h3>
+					<div class="tsd-signature tsd-kind-icon">Total<wbr>Log<wbr>Length<wbr>Exceeded<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="totalnumberofactionsexceeded" class="tsd-anchor"></a>
+					<h3>Total<wbr>Number<wbr>OfActions<wbr>Exceeded</h3>
+					<div class="tsd-signature tsd-kind-icon">Total<wbr>Number<wbr>OfActions<wbr>Exceeded<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="totalprepaidgasexceeded" class="tsd-anchor"></a>
+					<h3>Total<wbr>Prepaid<wbr>Gas<wbr>Exceeded</h3>
+					<div class="tsd-signature tsd-kind-icon">Total<wbr>Prepaid<wbr>Gas<wbr>Exceeded<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="triestostake" class="tsd-anchor"></a>
+					<h3>Tries<wbr>ToStake</h3>
+					<div class="tsd-signature tsd-kind-icon">Tries<wbr>ToStake<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="triestounstake" class="tsd-anchor"></a>
+					<h3>Tries<wbr>ToUnstake</h3>
+					<div class="tsd-signature tsd-kind-icon">Tries<wbr>ToUnstake<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="txexecutionerror" class="tsd-anchor"></a>
+					<h3>Tx<wbr>Execution<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">Tx<wbr>Execution<wbr>Error<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="unreachable" class="tsd-anchor"></a>
+					<h3>Unreachable</h3>
+					<div class="tsd-signature tsd-kind-icon">Unreachable<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="unsuitablestakingkey" class="tsd-anchor"></a>
+					<h3>Unsuitable<wbr>Staking<wbr>Key</h3>
+					<div class="tsd-signature tsd-kind-icon">Unsuitable<wbr>Staking<wbr>Key<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="valuelengthexceeded" class="tsd-anchor"></a>
+					<h3>Value<wbr>Length<wbr>Exceeded</h3>
+					<div class="tsd-signature tsd-kind-icon">Value<wbr>Length<wbr>Exceeded<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="wasmtrap" class="tsd-anchor"></a>
+					<h3>Wasm<wbr>Trap</h3>
+					<div class="tsd-signature tsd-kind-icon">Wasm<wbr>Trap<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="wasmunknownerror" class="tsd-anchor"></a>
+					<h3>Wasm<wbr>Unknown<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">Wasm<wbr>Unknown<wbr>Error<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="wasmercompileerror" class="tsd-anchor"></a>
+					<h3>Wasmer<wbr>Compile<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">Wasmer<wbr>Compile<wbr>Error<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="writeerror" class="tsd-anchor"></a>
+					<h3>Write<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">Write<wbr>Error<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="formaterror" class="tsd-anchor"></a>
+					<h3>format<wbr>Error</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">format<wbr>Error<span class="tsd-signature-symbol">(</span>errorClassName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, errorData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/utils/rpc_errors.ts:33</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>errorClassName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>errorData: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="geterrortypefromerrormessage" class="tsd-anchor"></a>
+					<h3>get<wbr>Error<wbr>Type<wbr>From<wbr>Error<wbr>Message</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Error<wbr>Type<wbr>From<wbr>Error<wbr>Message<span class="tsd-signature-symbol">(</span>errorMessage<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"AccountDoesNotExist"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"AccessKeyDoesNotExist"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"CodeDoesNotExist"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"InvalidNonce"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"UntypedError"</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/utils/rpc_errors.ts:80</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>errorMessage: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">"AccountDoesNotExist"</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">"AccessKeyDoesNotExist"</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">"CodeDoesNotExist"</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">"InvalidNonce"</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">"UntypedError"</span>
+							</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="parseresulterror" class="tsd-anchor"></a>
+					<h3>parse<wbr>Result<wbr>Error</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">parse<wbr>Result<wbr>Error<span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServerTransactionError</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/utils/rpc_errors.ts:23</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>result: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ServerTransactionError</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="parserpcerror" class="tsd-anchor"></a>
+					<h3>parse<wbr>Rpc<wbr>Error</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">parse<wbr>Rpc<wbr>Error<span class="tsd-signature-symbol">(</span>errorObj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/generated_rpc_error_types.servererror.html" class="tsd-signature-type">ServerError</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/utils/rpc_errors.ts:14</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>errorObj: <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/generated_rpc_error_types.servererror.html" class="tsd-signature-type">ServerError</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<!--{&quot;options&quot;:&quot;/home/runner/work/near-api-js/near-api-js&quot;,&quot;tsconfig&quot;:&quot;/home/runner/work/near-api-js/near-api-js&quot;,&quot;entryPoints&quot;:[&quot;src&quot;],&quot;exclude&quot;:[&quot;**/*index.ts&quot;],&quot;externalPattern&quot;:[&quot;**/node_modules/**&quot;],&quot;excludeExternals&quot;:false,&quot;excludeNotDocumented&quot;:false,&quot;excludeInternal&quot;:false,&quot;excludePrivate&quot;:false,&quot;excludeProtected&quot;:false,&quot;disableSources&quot;:false,&quot;includes&quot;:&quot;&quot;,&quot;media&quot;:&quot;&quot;,&quot;watch&quot;:false,&quot;preserveWatchOutput&quot;:false,&quot;emit&quot;:false,&quot;out&quot;:&quot;&quot;,&quot;json&quot;:&quot;&quot;,&quot;theme&quot;:&quot;./node_modules/typedoc-neo-theme/bin/default&quot;,&quot;highlightTheme&quot;:&quot;light-plus&quot;,&quot;name&quot;:&quot;&quot;,&quot;includeVersion&quot;:false,&quot;excludeTags&quot;:[],&quot;readme&quot;:&quot;&quot;,&quot;defaultCategory&quot;:&quot;Other&quot;,&quot;categoryOrder&quot;:[],&quot;categorizeByGroup&quot;:true,&quot;gitRevision&quot;:&quot;&quot;,&quot;gitRemote&quot;:&quot;origin&quot;,&quot;gaID&quot;:&quot;&quot;,&quot;gaSite&quot;:&quot;auto&quot;,&quot;hideGenerator&quot;:false,&quot;toc&quot;:[],&quot;disableOutputCheck&quot;:false,&quot;help&quot;:false,&quot;version&quot;:false,&quot;showConfig&quot;:false,&quot;plugin&quot;:[&quot;./node_modules/typedoc-neo-theme&quot;],&quot;logger&quot;:&quot;console&quot;,&quot;logLevel&quot;:1,&quot;listInvalidSymbolLinks&quot;:false,&quot;links&quot;:[{&quot;label&quot;:&quot;NEAR Docs&quot;,&quot;url&quot;:&quot;https://docs.near.org&quot;},{&quot;label&quot;:&quot;API JS Quick Reference&quot;,&quot;url&quot;:&quot;https://docs.near.org/docs/develop/front-end/naj-quick-reference&quot;},{&quot;label&quot;:&quot;RPC Endpoints&quot;,&quot;url&quot;:&quot;https://docs.near.org/docs/develop/front-end/rpc&quot;}],&quot;outline&quot;:[{&quot;Connect to NEAR&quot;:{&quot;browser&quot;:&quot;browserconnect&quot;,&quot;node.js&quot;:&quot;connect&quot;},&quot;Managing Accounts&quot;:{&quot;Account&quot;:&quot;classes/account.account-1&quot;,&quot;Wallet Account&quot;:&quot;classes/walletaccount.walletconnection&quot;,&quot;Smart Contracts&quot;:&quot;classes/contract.contract-1&quot;},&quot;Managing Keys&quot;:{&quot;KeyPair&quot;:&quot;utils_key_pair&quot;,&quot;BrowserLocalStorageKeyStore&quot;:&quot;classes/key_stores_browser_local_storage_key_store.browserlocalstoragekeystore&quot;,&quot;InMemoryKeyStore&quot;:&quot;classes/key_stores_in_memory_key_store.inmemorykeystore&quot;,&quot;UnencryptedFileSystemKeyStore&quot;:&quot;classes/key_stores_unencrypted_file_system_keystore.unencryptedfilesystemkeystore&quot;,&quot;MergeKeyStore&quot;:&quot;classes/key_stores_merge_key_store.mergekeystore&quot;},&quot;RPC&quot;:{&quot;Request and Response Types&quot;:&quot;providers_provider&quot;,&quot;Client&quot;:&quot;classes/providers_json_rpc_provider.jsonrpcprovider&quot;},&quot;utils&quot;:{&quot;Formatting&quot;:&quot;utils_format&quot;}}]}-->
+		</div>
+		<div class="col-2 col-menu secondary-menu">
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#accesskeynotfound" class="tsd-kind-icon">Access<wbr>Key<wbr>Not<wbr>Found</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#accountalreadyexists" class="tsd-kind-icon">Account<wbr>Already<wbr>Exists</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#accountdoesnotexist" class="tsd-kind-icon">Account<wbr>Does<wbr>Not<wbr>Exist</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#actionerror" class="tsd-kind-icon">Action<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#actionsvalidationerror" class="tsd-kind-icon">Actions<wbr>Validation<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#actornopermission" class="tsd-kind-icon">Actor<wbr>NoPermission</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#addkeyalreadyexists" class="tsd-kind-icon">Add<wbr>Key<wbr>Already<wbr>Exists</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#addkeymethodnamelengthexceeded" class="tsd-kind-icon">Add<wbr>Key<wbr>Method<wbr>Name<wbr>Length<wbr>Exceeded</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#addkeymethodnamesnumberofbytesexceeded" class="tsd-kind-icon">Add<wbr>Key<wbr>Method<wbr>Names<wbr>Number<wbr>OfBytes<wbr>Exceeded</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#badutf16" class="tsd-kind-icon">BadUTF16</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#badutf8" class="tsd-kind-icon">BadUTF8</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#balanceexceeded" class="tsd-kind-icon">Balance<wbr>Exceeded</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#balancemismatcherror" class="tsd-kind-icon">Balance<wbr>Mismatch<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#breakpointtrap" class="tsd-kind-icon">Breakpoint<wbr>Trap</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#cacheerror" class="tsd-kind-icon">Cache<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#callindirectoob" class="tsd-kind-icon">Call<wbr>IndirectOOB</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#cannotappendactiontojointpromise" class="tsd-kind-icon">Cannot<wbr>Append<wbr>Action<wbr>ToJoint<wbr>Promise</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#cannotreturnjointpromise" class="tsd-kind-icon">Cannot<wbr>Return<wbr>Joint<wbr>Promise</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#closed" class="tsd-kind-icon">Closed</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#codedoesnotexist" class="tsd-kind-icon">Code<wbr>Does<wbr>Not<wbr>Exist</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#compilationerror" class="tsd-kind-icon">Compilation<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#contractsizeexceeded" class="tsd-kind-icon">Contract<wbr>Size<wbr>Exceeded</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#costoverflow" class="tsd-kind-icon">Cost<wbr>Overflow</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#createaccountnotallowed" class="tsd-kind-icon">Create<wbr>Account<wbr>Not<wbr>Allowed</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#createaccountonlybyregistrar" class="tsd-kind-icon">Create<wbr>Account<wbr>Only<wbr>ByRegistrar</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#deleteaccountstaking" class="tsd-kind-icon">Delete<wbr>Account<wbr>Staking</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#deleteactionmustbefinal" class="tsd-kind-icon">Delete<wbr>Action<wbr>Must<wbr>BeFinal</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#deletekeydoesnotexist" class="tsd-kind-icon">Delete<wbr>Key<wbr>Does<wbr>Not<wbr>Exist</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#depositwithfunctioncall" class="tsd-kind-icon">Deposit<wbr>With<wbr>Function<wbr>Call</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#deprecated" class="tsd-kind-icon">Deprecated</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#deserialization" class="tsd-kind-icon">Deserialization</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#deserializationerror" class="tsd-kind-icon">Deserialization<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#emptymethodname" class="tsd-kind-icon">Empty<wbr>Method<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#expired" class="tsd-kind-icon">Expired</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#functioncallargumentslengthexceeded" class="tsd-kind-icon">Function<wbr>Call<wbr>Arguments<wbr>Length<wbr>Exceeded</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#functioncallerror" class="tsd-kind-icon">Function<wbr>Call<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#functioncallmethodnamelengthexceeded" class="tsd-kind-icon">Function<wbr>Call<wbr>Method<wbr>Name<wbr>Length<wbr>Exceeded</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#functioncallzeroattachedgas" class="tsd-kind-icon">Function<wbr>Call<wbr>Zero<wbr>Attached<wbr>Gas</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#gasexceeded" class="tsd-kind-icon">Gas<wbr>Exceeded</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#gasinstrumentation" class="tsd-kind-icon">Gas<wbr>Instrumentation</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#gaslimitexceeded" class="tsd-kind-icon">Gas<wbr>Limit<wbr>Exceeded</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#generictrap" class="tsd-kind-icon">Generic<wbr>Trap</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#guestpanic" class="tsd-kind-icon">Guest<wbr>Panic</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#hosterror" class="tsd-kind-icon">Host<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#illegalarithmetic" class="tsd-kind-icon">Illegal<wbr>Arithmetic</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#incorrectcallindirectsignature" class="tsd-kind-icon">Incorrect<wbr>Call<wbr>Indirect<wbr>Signature</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#instantiate" class="tsd-kind-icon">Instantiate</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#insufficientstake" class="tsd-kind-icon">Insufficient<wbr>Stake</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#integeroverflow" class="tsd-kind-icon">Integer<wbr>Overflow</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#internalerror" class="tsd-kind-icon">Internal<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#internalmemorydeclared" class="tsd-kind-icon">Internal<wbr>Memory<wbr>Declared</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#invalidaccesskeyerror" class="tsd-kind-icon">Invalid<wbr>Access<wbr>Key<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#invalidaccountid" class="tsd-kind-icon">Invalid<wbr>Account<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#invalidchain" class="tsd-kind-icon">Invalid<wbr>Chain</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#invaliddatareceiverid" class="tsd-kind-icon">Invalid<wbr>Data<wbr>Receiver<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#invaliditeratorindex" class="tsd-kind-icon">Invalid<wbr>Iterator<wbr>Index</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#invalidmethodname" class="tsd-kind-icon">Invalid<wbr>Method<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#invalidnonce" class="tsd-kind-icon">Invalid<wbr>Nonce</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#invalidpredecessorid" class="tsd-kind-icon">Invalid<wbr>Predecessor<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#invalidpromiseindex" class="tsd-kind-icon">Invalid<wbr>Promise<wbr>Index</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#invalidpromiseresultindex" class="tsd-kind-icon">Invalid<wbr>Promise<wbr>Result<wbr>Index</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#invalidpublickey" class="tsd-kind-icon">Invalid<wbr>Public<wbr>Key</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#invalidreceiptindex" class="tsd-kind-icon">Invalid<wbr>Receipt<wbr>Index</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#invalidreceiverid" class="tsd-kind-icon">Invalid<wbr>Receiver<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#invalidregisterid" class="tsd-kind-icon">Invalid<wbr>Register<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#invalidsignature" class="tsd-kind-icon">Invalid<wbr>Signature</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#invalidsignerid" class="tsd-kind-icon">Invalid<wbr>Signer<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#invalidtxerror" class="tsd-kind-icon">Invalid<wbr>TxError</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#iteratorwasinvalidated" class="tsd-kind-icon">Iterator<wbr>Was<wbr>Invalidated</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#keylengthexceeded" class="tsd-kind-icon">Key<wbr>Length<wbr>Exceeded</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#lackbalanceforstate" class="tsd-kind-icon">Lack<wbr>Balance<wbr>For<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#linkerror" class="tsd-kind-icon">Link<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#memory" class="tsd-kind-icon">Memory</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#memoryaccessviolation" class="tsd-kind-icon">Memory<wbr>Access<wbr>Violation</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#memoryoutofbounds" class="tsd-kind-icon">Memory<wbr>Out<wbr>OfBounds</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#methodemptyname" class="tsd-kind-icon">Method<wbr>Empty<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#methodinvalidsignature" class="tsd-kind-icon">Method<wbr>Invalid<wbr>Signature</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#methodnamemismatch" class="tsd-kind-icon">Method<wbr>Name<wbr>Mismatch</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#methodnotfound" class="tsd-kind-icon">Method<wbr>Not<wbr>Found</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#methodresolveerror" class="tsd-kind-icon">Method<wbr>Resolve<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#methodutf8error" class="tsd-kind-icon">MethodUTF8<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#misalignedatomicaccess" class="tsd-kind-icon">Misaligned<wbr>Atomic<wbr>Access</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#notenoughallowance" class="tsd-kind-icon">Not<wbr>Enough<wbr>Allowance</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#notenoughbalance" class="tsd-kind-icon">Not<wbr>Enough<wbr>Balance</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#numberinputdatadependenciesexceeded" class="tsd-kind-icon">Number<wbr>Input<wbr>Data<wbr>Dependencies<wbr>Exceeded</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#numberoflogsexceeded" class="tsd-kind-icon">Number<wbr>OfLogs<wbr>Exceeded</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#numberpromisesexceeded" class="tsd-kind-icon">Number<wbr>Promises<wbr>Exceeded</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#onlyimplicitaccountcreationallowed" class="tsd-kind-icon">Only<wbr>Implicit<wbr>Account<wbr>Creation<wbr>Allowed</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#prepareerror" class="tsd-kind-icon">Prepare<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#prohibitedinview" class="tsd-kind-icon">Prohibited<wbr>InView</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#readerror" class="tsd-kind-icon">Read<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#receiptvalidationerror" class="tsd-kind-icon">Receipt<wbr>Validation<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#receivermismatch" class="tsd-kind-icon">Receiver<wbr>Mismatch</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#requiresfullaccess" class="tsd-kind-icon">Requires<wbr>Full<wbr>Access</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#returnedvaluelengthexceeded" class="tsd-kind-icon">Returned<wbr>Value<wbr>Length<wbr>Exceeded</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#serialization" class="tsd-kind-icon">Serialization</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#serializationerror" class="tsd-kind-icon">Serialization<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#servererror" class="tsd-kind-icon">Server<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#signerdoesnotexist" class="tsd-kind-icon">Signer<wbr>Does<wbr>Not<wbr>Exist</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#stackheightinstrumentation" class="tsd-kind-icon">Stack<wbr>Height<wbr>Instrumentation</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#stackoverflow" class="tsd-kind-icon">Stack<wbr>Overflow</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#timeout" class="tsd-kind-icon">Timeout</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#totalloglengthexceeded" class="tsd-kind-icon">Total<wbr>Log<wbr>Length<wbr>Exceeded</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#totalnumberofactionsexceeded" class="tsd-kind-icon">Total<wbr>Number<wbr>OfActions<wbr>Exceeded</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#totalprepaidgasexceeded" class="tsd-kind-icon">Total<wbr>Prepaid<wbr>Gas<wbr>Exceeded</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#triestostake" class="tsd-kind-icon">Tries<wbr>ToStake</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#triestounstake" class="tsd-kind-icon">Tries<wbr>ToUnstake</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#txexecutionerror" class="tsd-kind-icon">Tx<wbr>Execution<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#unreachable" class="tsd-kind-icon">Unreachable</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#unsuitablestakingkey" class="tsd-kind-icon">Unsuitable<wbr>Staking<wbr>Key</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#valuelengthexceeded" class="tsd-kind-icon">Value<wbr>Length<wbr>Exceeded</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#wasmtrap" class="tsd-kind-icon">Wasm<wbr>Trap</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#wasmunknownerror" class="tsd-kind-icon">Wasm<wbr>Unknown<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#wasmercompileerror" class="tsd-kind-icon">Wasmer<wbr>Compile<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#writeerror" class="tsd-kind-icon">Write<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#formaterror" class="tsd-kind-icon">format<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#geterrortypefromerrormessage" class="tsd-kind-icon">get<wbr>Error<wbr>Type<wbr>From<wbr>Error<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#parseresulterror" class="tsd-kind-icon">parse<wbr>Result<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module root">
+						<a href="utils_rpc_errors.html#parserpcerror" class="tsd-kind-icon">parse<wbr>Rpc<wbr>Error</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
